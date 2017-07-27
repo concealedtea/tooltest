@@ -1,6 +1,5 @@
 import java.io.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 /**
  * Created by rore256 on 7/27/2017.
  * sample line from dataset:
@@ -14,7 +13,7 @@ public class parser {
         int i =0;
         try {
             while (i < 4) {
-                File file = new File("C:/Users/thastq/IdeaProjects/tooltest/data/00000" + i + "_0.txt");
+                File file = new File("C:/Users/thatq/IdeaProjects/tooltest/data/00000" + i + "_0");
                 FileInputStream stream = null;
                 stream = new FileInputStream(file);
                 DataInputStream in = new DataInputStream(stream);
