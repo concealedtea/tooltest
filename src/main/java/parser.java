@@ -14,7 +14,7 @@ public class parser {
         int i =0;
         try {
             while (i < 4) {
-                File file = new File("C:/Users/thastq/IdeaProjects/falcoparse/data/00000" + i + "_0.txt");
+                File file = new File("C:/Users/thastq/IdeaProjects/tooltest/data/00000" + i + "_0.txt");
                 FileInputStream stream = null;
                 stream = new FileInputStream(file);
                 DataInputStream in = new DataInputStream(stream);
