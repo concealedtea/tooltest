@@ -6,11 +6,11 @@
         </Console>
         <Kafka name="Kafka" topic="parser">
             <PatternLayout pattern="%date %message"/>
-            <Property name="bootstrap.servers">sandbox.hortonworks.com:2181</Property>
+            <Property name="bootstrap.servers">10.0.0.62:9092</Property>
         </Kafka>
     </Appenders>
     <Loggers>
-        <Root level="trace">
+        <Root level="INFO">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="Kafka"/>
         </Root>

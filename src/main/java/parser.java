@@ -13,7 +13,7 @@ public class parser {
         int i =0;
         try {
             while (i < 4) {
-                File file = new File("C:/Users/thatq/IdeaProjects/tooltest/data/00000" + i + "_0");
+                File file = new File("data/00000" + i + "_0");
                 FileInputStream stream = null;
                 stream = new FileInputStream(file);
                 DataInputStream in = new DataInputStream(stream);
