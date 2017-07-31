@@ -10,4 +10,14 @@
 
 <p align = center><b>/src/main/java/parser.java</b></p>
 
-</p>
+<h1><p align = center>Step 3:</p></h1>
+<p align = center> Wrap package into .jar file and export to HDFS for Kafka/Flume Processing</p>
+
+<h1><p align = center>Step 4:</p></h1>
+<p align = center>Start up all needed resources on CentOS (Linux Distribution I'm using, yours may be different). 
+  Name/Data nodes, Zookeeper, Kafka, Hadoop. 
+  Do -> jps <- to make sure all of them are online. </p>
+  
+<h1><p align = center>Step 5:</p></h1>
+<p align = center> Run Flume to have a receiver after setting up a Flume.conf file. </p>
+ <p align = center><b>flume-ng agent -n flume1 -c conf -f example.conf -    Dflume.root.logger=INFO,console</b></p>
