@@ -20,4 +20,6 @@
   
 <h1><p align = center>Step 5:</p></h1>
 <p align = center> Run Flume to have a receiver after setting up a Flume.conf file. </p>
- <p align = center><b>flume-ng agent -n flume1 -c conf -f example.conf -    Dflume.root.logger=INFO,console</b></p>
+ <p align = center><b>flume-ng agent -n flume1 -c conf -f flume.conf -    Dflume.root.logger=INFO,console</b></p>
+ <p align = center> Run the java -jar file to start the Kafka Producer </p>
+ <p align = center><b>java -jar tooltest-1.4-SNAPSHOT.jar</b></p>
