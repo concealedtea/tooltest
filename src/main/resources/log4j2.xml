@@ -4,7 +4,7 @@
         <Console name="STDOUT" target="SYSTEM_OUT">
             <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"/>
         </Console>
-        <Kafka name="Kafka" topic="parser">
+        <Kafka name="Kafka" topic="parse">
             <PatternLayout pattern="%date %message"/>
             <Property name="bootstrap.servers">10.0.0.62:9092</Property>
         </Kafka>
