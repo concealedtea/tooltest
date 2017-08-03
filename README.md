@@ -1,3 +1,7 @@
+<h1><p align = center>Cumultive Data Project Weeks 1-5 Internship (First Half)</p></h1>
+Resources used: 
+Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, CentOS, Apache Zookeeper. 
+
 <h1><p align = center>Step 1:</p></h1>
 <p align = center>Use collected data on 1 Hive table (Hue/Company HDFS) and store it onto Personal HDFS</p>
 
