@@ -31,3 +31,6 @@ Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, Cent
 
 <h1><p align = center>Step 6:</p></h1>
 <p align = center> Install and configure Hive. Start up Hive. </p>
+<p align = center><b> '$HIVE_HOME/bin/hive' </b> </p>
+
+
