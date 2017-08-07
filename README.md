@@ -26,8 +26,8 @@ Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, Cent
 <p align = center> Run Flume to have a receiver after setting up a Flume.conf file. </p>
  <p align = center><b>flume-ng agent -n flume1 -c conf -f flume.conf -    Dflume.root.logger=INFO,console</b></p>
  <p align = center> Run the java -jar file to start the Kafka Producer </p>
- <p align = center><b>java -jar tooltest-1.4-SNAPSHOT.jar</b></p>
- <p align = center> With both the Consumer/Producer running, the files from the folder will now be read into Hadoop Distributed File System (HDFS) and stored under '/user/kafka/database/parse/%y-%m' </p>
+ <p align = center><b>java -jar tooltest-VERSION-SNAPSHOT.jar</b></p>
+ <p align = center> With both the Consumer/Producer running, the files from the folder will now be read into Hadoop Distributed File System (HDFS) and stored under '/user/kafka/database/%topic/%y-%m' </p>
 
 <h1><p align = center>Step 6:</p></h1>
 <p align = center> Install and configure Hive. Start up Hive. </p>
