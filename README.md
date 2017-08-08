@@ -3,6 +3,7 @@ Resources used:
 Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, CentOS, Apache Zookeeper. 
 
 Steps 1-5 can be edited to just take data (if doing practice with local files) and put it onto HDFS with the command
+
 <b> "hadoop fs -copyFromLocal 'file/address/in/linux' 'hdfs/location/' " </b>
 
 <h1><p align = center>Step 1:</p></h1>
