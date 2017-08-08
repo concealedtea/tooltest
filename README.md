@@ -2,6 +2,9 @@
 Resources used: 
 Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, CentOS, Apache Zookeeper. 
 
+Steps 1-5 can be edited to just take data (if doing practice with local files) and put it onto HDFS with the command
+<b> "hadoop fs -copyFromLocal 'file/address/in/linux' 'hdfs/location/' " </b>
+
 <h1><p align = center>Step 1:</p></h1>
 <p align = center>Use collected data on 1 Hive table (Hue/Company HDFS) and store it onto Personal HDFS</p>
 
@@ -32,5 +35,9 @@ Apache Kafka, Apache Hadoop, Apache Flume, Hadoop HDFS, Java, Maven, Log4J, Cent
 <h1><p align = center>Step 6:</p></h1>
 <p align = center> Install and configure Hive. Start up Hive. </p>
 <p align = center><b> '$HIVE_HOME/bin/hive' </b> </p>
-
-
+<p align = center> Create a table in hive delimited by whatever you are delimited by, in this case it's the pipe character | </p>
+<p align = center><b> create table tablename(a int, b string, c string, d string, e string)</b> </p>
+<p align = center><b> row format delimited </b> </p>
+<p align = center><b> fields delimited by '\|'; </b> </p>
+<p align = center> Load data from hdfs into hive table</p>
+<p align = center><b> 'load data inpath 'filepath/path' into table tester2 </b> </p>
