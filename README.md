@@ -42,3 +42,8 @@ Steps 1-5 can be edited to just take data (if doing practice with local files) a
 <p align = center><b> fields delimited by '\|'; </b> </p>
 <p align = center> Load data from hdfs into hive table</p>
 <p align = center><b> 'load data inpath 'filepath/path' into table tester2 </b> </p>
+
+<h1><p align = center>Step 7:</p></h1>
+<p align = center> Create sorted table that sorts by phone brand, we'll use this data to create a visual after sending to MySQL </p>
+<p align = center><b> 'insert into table sortedOrdered select phone,count(phone) as phoneCount from tester2 group by phone order by phoneCount desc;' </b> </p>
+<p align = center> This is a sorted table with entries in 2 columns of phone brand and the # of times that people using that brand have accessed our app.</p>
