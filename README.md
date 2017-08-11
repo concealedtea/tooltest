@@ -31,7 +31,7 @@ Steps 1-5 can be edited to just take data (if doing practice with local files) a
  <p align = center><b>flume-ng agent -n flume1 -c conf -f flume.conf -    Dflume.root.logger=INFO,console</b></p>
  <p align = center> Run the java -jar file to start the Kafka Producer </p>
  <p align = center><b>java -jar tooltest-VERSION-SNAPSHOT.jar</b></p>
- <p align = center> With both the Consumer/Producer running, the files from the folder will now be read into Hadoop Distributed File System (HDFS) and stored under '/user/kafka/database/%topic/%y-%m' </p>
+ <p align = center> With both the Consumer/Producer running, the files from the folder will now be read into Hadoop Distributed File System (HDFS) and stored under '/user/kafka/database/%topic/%y-%m-%d' </p>
 
 <h1><p align = center>Step 6:</p></h1>
 <p align = center> Install and configure Hive. Start up Hive. </p>
@@ -50,4 +50,4 @@ Steps 1-5 can be edited to just take data (if doing practice with local files) a
 
 <h1><p align = center>Step 8:</p></h1>
 <p align = center> Use Sqoop (ver 1.4.6 compatible with Hadoop 2.8.0) to export data from hive warehouse to MySQL for web visual integration.</p>
-<p align = center><b> ./sqoop export --connect jdbc:mysql://localhost/test --username root -P --table test --fields-terminated-by ',' --lines-terminated-by '\n' --export-dir /user/hive/warehouse/sortorder  </b> </p>
+<p align = center><b> ./sqoop export --connect jdbc:mysql://localhost/test --username root -P --table test --fields-terminated-by ',' --lines-terminated-by '\n' --export-dir /user/hive/warehouse/tester2  </b> </p>
