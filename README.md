@@ -51,3 +51,6 @@ Steps 1-5 can be edited to just take data (if doing practice with local files) a
 <h1><p align = center>Step 8:</p></h1>
 <p align = center> Use Sqoop (ver 1.4.6 compatible with Hadoop 2.8.0) to export data from hive warehouse to MySQL for web visual integration.</p>
 <p align = center><b> ./sqoop export --connect jdbc:mysql://localhost/test --username root -P --table test --fields-terminated-by ',' --lines-terminated-by '\n' --export-dir /user/hive/warehouse/tester2  </b> </p>
+
+<h1><p align = center>Step 9:</p></h1>
+<p align = center> See other project for continued development, including processing SQL Data to a webpage using Java and Spring</p>
